@@ -5,3 +5,16 @@
   <button type="button" class="btn btn-primary">Middle</button>
   <button type="button" class="btn btn-primary">Right</button>
 </div>
+
+
+<% @sakes.each do |sake| %>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h3 class="card-title"><%= sake.name %></h3>
+      <h4 class="card-subtitle mb-2 text-muted"><%= sake.kura %></h4>
+      <p class="card-text"><%= sake.todofuken %>の日本酒です。</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+<% end %>
