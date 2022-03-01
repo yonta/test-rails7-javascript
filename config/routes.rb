@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  # Defines the root path route ("/")
-  # root "sakes#index"
+  root "sakes#index"
+
+  get "/sakes", to: "sakes#index"
 end
