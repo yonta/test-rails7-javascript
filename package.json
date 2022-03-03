@@ -4,9 +4,12 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.1.1",
+    "@popperjs/core": "^2.11.2",
+    "bootstrap": "^5.1.3",
     "esbuild": "^0.14.24"
   },
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
+    "build-server": "yarn run build --watch"
   }
 }
